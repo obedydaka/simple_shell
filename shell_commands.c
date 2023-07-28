@@ -61,7 +61,7 @@ int change_directory(info_t *info)
 			return (1);
 		}
 		_puts(get_env(info, "OLDPWD=")), _putchar('\n');
-		chdir_ret = 
+		chdir_ret =
 			chdir((dir = get_env(info, "OLDPWD=")) ? dir : "/");
 	}
 	else
