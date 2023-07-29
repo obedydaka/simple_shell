@@ -41,7 +41,7 @@ $ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o simpsh
 
 1. To start the shell, run the compiled executable:
 
-```
+```bash
 ./simpsh
 ```
 
@@ -87,7 +87,7 @@ Hello, World!
 
 * Print the current environment variables:
 
-```
+```shell
 simple_shell:$ env
 ...
 MY_VAR=value
@@ -96,28 +96,27 @@ MY_VAR=value
 
 * Set an environment variable:
 
-```
+```shell
 simple_shell:$ setenv MY_VAR value
 ```
 
 * Unset an environment variable:
 
-```
+```shell
 simple_shell:$ unsetenv MY_VAR
 ```
 
 * Exit the shell:
 
-```
+```shell
 simple_shell:$ exit
-$
 ```
 
 #### Exiting the Shell with a Specific Status
 
 You can exit the shell with a specific integer status by providing an argument to the exit command. If an argument is given, the shell will interpret it as the exit status and terminate with that status. The status must be a valid integer.
 
-```
+```shell
 simple_shell:$ exit 98
 ```
 
